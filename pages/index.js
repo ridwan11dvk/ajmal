@@ -54,10 +54,9 @@ export default function Home() {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 p-4">
           {data.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <div
                   className="mx-auto p-4 flex flex-col justify-center items-center gap-4 border rounded-xl border-gray-200"
-                  key={index}
                 >
                   <div className="relative w-[100px] h-[90px] ">
                     <Image
